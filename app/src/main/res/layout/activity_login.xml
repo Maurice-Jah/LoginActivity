@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center_vertical"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fun-Fact Login"
+        android:layout_marginTop="-80dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/signIn_btn"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/programming_language_icon"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:hint="@string/hint_email_address">
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/email_edit_text"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="textEmailAddress"
+           />
+   </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:passwordToggleEnabled="true"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/signIn_btn"
+            android:layout_marginTop="20dp"
+           android:paddingRight="60dp"
+            android:paddingLeft="60dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            android:text="@string/shr_button_signIn"
+            android:elevation="@dimen/cardview_default_elevation"/>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
